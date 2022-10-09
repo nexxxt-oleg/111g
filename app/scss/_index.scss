@@ -86,6 +86,7 @@
       margin: 0 auto;
       text-align: center;
       color: #fff;
+
       h1 {
         font-size: 48px;
         line-height: 1.3;
@@ -93,6 +94,7 @@
         text-transform: uppercase;
         font-weight: bold;
       }
+
       p {
         font-size: 16px;
         line-height: 24px;
@@ -100,6 +102,7 @@
         margin-bottom: 24px;
         margin-top: 0;
       }
+
       &__label {
         width: 150px;
         height: 45px;
@@ -115,6 +118,7 @@
         background-size: contain;
       }
     }
+
     &::after {
       content: "";
       display: block;
@@ -133,22 +137,28 @@
   &__section2 {
     padding-top: 60px;
     padding-bottom: 30px;
+
     &__video {
       padding-bottom: 40px;
     }
+
     &__ps {
       text-align: center;
 
     }
   }
 }
+
 .h2 {
   color: #000;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
   margin-bottom: 30px;
+  position: relative;
+  z-index: 20;
 }
+
 .grom__section3 {
   margin-top: 50px;
   padding-top: 90px;
@@ -169,10 +179,12 @@
   .h2 {
     color: #fff;
   }
+
   p {
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
+
     a {
       color: #fff;
       text-decoration: underline;
@@ -192,12 +204,222 @@
     width: 211px;
     height: 262px;
   }
-  &__section4 {
-    padding-top: 85px;
-  }
+
 }
+
 p {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 16px;
+  font-weight: 300;
+}
+
+.grom__section4 {
+  padding-top: 85px;
+  border-bottom: 1px solid #d5d5d5;
+
+  &__title {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    min-height: 175px;
+    background: url('../images/dist/sectr4-t.svg') 50% 50% no-repeat;
+    background-size: auto 175px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h3 {
+      text-align: center;
+      margin: 0;
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: bold;
+    }
+  }
+}
+
+.fpad40 {
+  padding-bottom: 40px;
+}
+
+.team__item {
+  display: flex;
+  padding-bottom: 50px;
+
+  &__pic {
+    min-width: 265px;
+    display: flex;
+    justify-content: center;
+
+    &__inner {
+      position: relative;
+      margin-bottom: auto;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 100%;
+        left: 10px;
+        width: calc(100% - 20px);
+        height: 5px;
+        background-color: #d5d5d5;
+      }
+
+      img {
+        display: block;
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+
+  &__desc {
+    width: 150px;
+    flex-grow: 1;
+  }
+
+  &__header {
+    padding-bottom: 35px;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      bottom: 17px;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: #ff0063;
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__role {
+    color: #737373;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+
+.teams__slider {
+  position: relative;
+  margin-bottom: 90px;
+
+  .swiper {
+    overflow: visible;
+
+    &:not(.swiper-initialized) {
+      .swiper-slide {
+        width: 290px;
+      }
+    }
+  }
+}
+
+.team__item__footer {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.grom__section5 {
+  padding: 80px 0 100px;
+
+  &__row1 {
+    padding-bottom: 35px;
+    padding-top: 20px;
+  }
+
+  &__pic1 {
+    position: relative;
+    max-width: 480px;
+
+    img {
+      display: block;
+      position: relative;
+      z-index: 10;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: -80px;
+      left: -65px;
+      width: 190px;
+      height: 191px;
+      background: url("../images/dist/sect5-img.svg") 0 0 no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__pic2 {
+    margin-left: -120px;
+  }
+}
+
+.quote {
+  &__header {
+    display: flex;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    align-items: center;
+    position: relative;
+
+    &__ava {
+      min-width: 100px;
+      width: 100px;
+
+      img {
+        display: block;
+      }
+    }
+
+    &__desc {
+      width: 200px;
+      flex-grow: 1;
+    }
+    &__name {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      padding-bottom: 8px;
+    }
+    &__role {
+      color: #737373;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+
+.grom__section6 {
+  padding: 80px 0;
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 10;
+  @include respond(mac) {
+    background-image: url('../images/dist/sectr6@2.jpg');
+  }
+  @include respond(tablet) {
+    background-image: url('../images/dist/sectr6.jpg');
+  }
 }
