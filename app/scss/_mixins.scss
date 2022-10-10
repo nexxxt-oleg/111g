@@ -7,13 +7,13 @@
   }
 
   @if $breakpoint==tablet {
-    @media only screen and (min-width: 601px) and (min-width: 1920px) {
+    @media only screen and (min-width: 991.1px) and (max-width: 1920px) {
       @content;
     }
   }
 
   @if $breakpoint==mobile {
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 991px) {
       @content;
     }
   }
