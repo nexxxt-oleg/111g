@@ -52,7 +52,6 @@
     }
 
     @include respond(mobile) {
-      margin-top: 0;
       min-height: auto;
       padding-bottom: 50px;
     }
@@ -346,7 +345,7 @@ p {
 }
 
 .grom__section5 {
-  padding: 80px 0 100px;
+  padding: 80px 0;
 
   &__row1 {
     padding-bottom: 35px;
@@ -356,6 +355,7 @@ p {
   &__pic1 {
     position: relative;
     max-width: 480px;
+    padding-bottom: 20px;
 
     img {
       display: block;
@@ -378,7 +378,8 @@ p {
   }
 
   &__pic2 {
-    margin-left: -120px;
+    margin-left: -60px;
+    padding-bottom: 20px;
   }
 }
 
@@ -993,36 +994,308 @@ img {
 .connection__footer__link .connection__footer__link__bg {
   color: #ff0063;
 }
+
 .connection__footer__link:hover .connection__footer__link__bg,
 .link-btn:hover .link-btn__bg {
   color: #df0257;
 }
+.mob-raiting {
+  display: none;
+}
+@media only screen and (max-width: 1700px) {
+  .shop__left {
+    padding-right: 0;
+  }
+  .shop__right {
+    padding-left: 0;
+  }
+  .shop__left:after {
+    right: 320px;
+  }
+  .shop__right:after {
+    left: 340px;
+  }
+}
 
+@media only screen and (min-width: 991.1px) {
+  .actors__slider__row {
+    flex-wrap: wrap;
+    .swiper-slide {
+      width: 50%;
+    }
+  }
+  .actors__slider .slider-buttons__button {
+    display: none !important;
+  }
 
+  .filming-gallery .slider-buttons__button {
+    display: none !important;
+  }
 
+}
 @media only screen and (max-width: 991px) {
- .grom__header__mob-toggle {
-   color: #fff;
-   padding: 5px;
-   border: none;
-   width: 30px;
-   position: relative;
-   z-index: 10;
-   margin: 0 auto;
-   span {
-     display: block;
-     width: 20px;
-     height: 2px;
-     background-color: #fff;
-     margin: 2.5px 0;
-     transition: all 0.3s ease-in-out;
-   }
-   &:hover,
-   &:active,
-   &:focus {
-     outline: none !important;
-     box-shadow: none !important;
-   }
- }
+  .grom__header__mob-toggle {
+    color: #fff;
+    padding: 5px;
+    border: none;
+    width: 30px;
+    position: relative;
+    z-index: 10;
+    margin: 0 auto;
+
+    span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      margin: 2.5px 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+  .grom__section1__col-age {
+    display: none !important;
+  }
+  .mob-raiting {
+    display: block;
+    top: 6px;
+    right: 15px;
+    position: absolute;
+  }
+  .grom__header__nav__inner .nav {
+    display: block !important;
+    padding-top: 15px;
+  }
+  .grom__header__nav__inner .nav li {
+    padding: 0 0 15px;
+  }
+  .grom__header__nav__inner .nav li a {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+  }
+  .grom__section1 {
+    background-image: url("../images/dist/bg1_mob.jpg");
+    background-position: 50% 50%;
+  }
+  .grom__section1__images {
+    padding-top: 30px;
+  }
+  .grom__section1__text h1 {
+    font-size: 30px;
+  }
+  .grom__section1__text p {
+    font-size: 14px;
+  }
+  .grom__section1:after {
+    width: 120px;
+    margin-left: -60px;
+    height: 82px;
+    bottom: -55px;
+  }
+  .h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .grom__section2__video {
+    padding-bottom: 20px;
+  }
+  .grom__section3 {
+    background-image: url("../images/dist/bg3_mob.jpg");
+    .container {
+      position: relative;
+      z-index: 10;
+    }
+    &::after {
+      width: 120px;
+      margin-right: -60px;
+      height: 149px;
+      top: -55px;
+    }
+  }
+  .grom__section4 {
+    padding-top: 60px;
+  }
+  .actors__slider__row {
+    flex-wrap: nowrap;
+  }
+  .actors__slider {
+    position: relative;
+    padding: 0 30px;
+  }
+  .grom__section5__pic2 {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .filming {
+    padding-top: 50px;
+    background-image: url("../images/dist/sectr6_mob.jpg");
+    &__header {
+      height: 120px;
+      background-size: auto 120px;
+    }
+  }
+  .connection {
+    padding: 60px 15px;
+  }
+  .connection__pic {
+    padding-right: 95px;
+  }
+  .connection__pic__min {
+    right: 0;
+    width: 175px;
+  }
+  .grom__section8 {
+    background-image: url(../images/dist/bg8.jpg);
+  }
+  .poster {
+    padding: 50px 0;
+  }
+  .grom__section10 {
+    margin-left: -15px;
+    margin-right: -15px;
+    background-image: none;
+  }
+  .shop__left {
+    background: url("../images/dist/shop-left-bg.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    padding-right: 30px;
+  }
+  .shop__right {
+    background: url("../images/dist/shop-right-bg.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    padding-left: 30px;
+  }
+  .shop__left:after {
+    right: 370px;
+  }
+  .shop__right:after {
+    left: 380px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .team__item {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .team__item__desc {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .team__item__header:after {
+    left: 50%;
+    margin-left: -20px;
+  }
+  .connection__pic {
+    padding-right: 65px;
+  }
+  .connection__pic__min {
+    right: 0;
+    width: 125px;
+  }
+  .grom__section8__inner img {
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+  }
+  .h2 {
+    margin-bottom: 20px;
+  }
+  .poster__header {
+    padding-bottom: 20px;
+  }
+  .poster__slider .swiper-slide {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slider-buttons__button_next {
+    right: 0;
+  }
+  .slider-buttons__button_previous {
+    left: 0;
+  }
+  .actors__slider .slider-buttons__button {
+    top: 130px;
+  }
+  .connection__films {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding-bottom: 20px;
+  }
+  .filming-gallery .swiper-slide a img {
+    height: 160px;
+  }
+  .grom__section8__inner {
+    padding: 0;
+  }
+  .grom__section8 {
+    padding-top: 50px;
+    background-image: url(../images/dist/bg8_mob.jpg);
+  }
+
+  .shop__left {
+    height: auto;
+    padding-top: 280px;
+    background-image: url("../images/dist/shop-left-bg_mob.jpg");
+    padding-bottom: 50px;
+    &::after {
+      width: 300px;
+      height: 250px;
+      top: 0;
+      margin-right: -150px;
+      right: 50%;
+    }
+  }
+  .shop__left .shop__desc,
+  .shop__right .shop__desc {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .shop__right {
+    height: auto;
+    padding-top: 320px;
+    background-image: url("../images/dist/shop-right-bg_mob.jpg");
+    padding-bottom: 50px;
+    &::after {
+      width: 300px;
+      height: 250px;
+      top: 40px;
+      margin-left: -150px;
+      left: 50%;
+      background-image: url("../images/dist/shop-right_mob.png");
+    }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .grom__section2__video {
+    iframe {
+      height: 200px !important;
+    }
+  }
+  .connection__pic {
+    padding-right: 45px;
+  }
+  .connection__pic__min {
+    right: 0;
+    width: 115px;
+    bottom: 30px;
+  }
+  .filming-gallery .swiper-slide a img {
+    height: 120px;
+  }
 
 }
