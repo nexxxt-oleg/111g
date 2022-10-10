@@ -41,3 +41,14 @@
   font-weight: 500;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/FiraSansLight-Italic.eot');
+  src: local('Fira Sans Light Italic'), local('FiraSansLight-Italic'),
+  url('../fonts/FiraSansLight-Italic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/FiraSansLight-Italic.woff') format('woff'),
+  url('../fonts/FiraSansLight-Italic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
