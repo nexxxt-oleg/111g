@@ -47,10 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const sliderBrands = new Swiper('#posterSlider', {
             slidesPerView: 4,
             spaceBetween: 30,
-            /* navigation: {
-                 nextEl: '.button-next',
-                 prevEl: '.button-prev',
-             },*/
+            navigation: {
+                prevEl: '#gallery__btnNext',
+                nextEl: '#gallery__btnPrev',
+             },
             lazy: {
                 loadPrevNext: true,
             },
