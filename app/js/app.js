@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (document.getElementById('teamsSlider')) {
         const sliderBrands = new Swiper('#teamsSlider', {
             slidesPerView: 4,
-           /* navigation: {
-                nextEl: '.button-next',
-                prevEl: '.button-prev',
-            },*/
+            navigation: {
+                nextEl: '#teamsSlider__btnPrev',
+                prevEl: '#teamsSlider__btnNext',
+            },
             breakpoints: {
                 768: {
                     slidesPerView: 3,
